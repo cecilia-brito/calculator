@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+html{
+    font-size: 62.5%;
+}
+
+.box-calculator{
+    background-color: black;
+    display: grid;
+    width: 33rem;
+    height: 46rem;
+    margin: 2rem auto;
+    border-radius: 0.8rem;
+    grid-template-columns: 8rem 8rem 8rem 8rem;
+    grid-template-rows: 9rem 8rem 8rem 8rem 8rem;
+    grid-template-areas: "display display display display"
+                         "btn_7 btn_8 btn_9 btn_division"
+                         "btn_4 btn_5 btn_6 btn_multiplication"
+                         "btn_1 btn_2 btn_3 btn_subtration"
+                         "btn_0 btn_dot btn_equal btn_addition"
+    ;
+    padding: 2rem 4rem 3rem 4rem;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.calculator-display{
+    background-color: #a6a797;
+    grid-area: display;
+    border-radius: 0.8rem;
+}
+
+.calculator-display p{
+    margin-top: 2.6rem;
+    font-size: 4.4rem;
+    text-align: right;
+    color: white;
+    font-family: 'PT Mono', monospace;
+}
+
+.btn_seven{
+    background-color: gray;
+    grid-area: btn_7;
+    /* border: none; */
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.btn_eight{
+    background-color: gray;
+    grid-area: btn_8;
+    /* border: none;     */
+    color: white;
+    border-radius: 0.5rem;
+}
+.btn_nine{
+    background-color: gray;
+    grid-area: btn_9;
+    /* border: none;  */
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.btn_division{
+    background-color: gray;
+    grid-area: btn_division;
+    /* border: none;  */
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.btn_four{
+    background-color: gray;
+    grid-area: btn_4;
+    /* border: none;  */
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.btn_five{
+    background-color: gray;
+    grid-area: btn_5;
+    /* border: none;  */
+    color: white;
+    border-radius: 0.5rem; 
+}
+
+.btn_six{
+    background-color: gray;
+    grid-area: btn_6;
+    /* border: none;  */
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.btn_multi{
+    background-color: gray;
+    grid-area: btn_multiplication;
+    /* border: none;  */
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.btn_one{
+    background-color: gray;
+    grid-area: btn_1;
+    /* border: none;  */
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.btn_two{
+    background-color: gray;
+    grid-area: btn_2;
+    /* border: none;  */
+    color: white;
+    border-radius: 0.5rem;  
+}
+
+.btn_three{
+    background-color: gray;
+    grid-area: btn_3;
+    /* border: none;  */
+    color: white;
+    border-radius: 0.5rem;  
+}
+
+.btn_subtration{
+    background-color: gray;
+    grid-area: btn_subtration;
+    /* border: none;  */
+    color: white;
+    border-radius: 0.5rem;  
+}
+
+.btn_zero{
+    background-color: gray;
+    grid-area: btn_0;
+    /* border: none;  */
+    color: white;
+    border-radius: 0.5rem;  
+}
+
+.btn_dot{
+    background-color: gray;
+    grid-area: btn_dot;
+    /* border: none;  */
+    color: white;
+    border-radius: 0.5rem;  
+}
+
+.btn_equal{
+    background-color: gray;
+    grid-area: btn_equal;
+    /* border: none;  */
+    color: white;
+    border-radius: 0.5rem;  
+}
+
+.btn_add{
+    background-color: gray;
+    grid-area: btn_addition;
+    /* border: none;  */
+    color: white;
+    border-radius: 0.5rem;  
+}
