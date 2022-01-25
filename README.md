@@ -29,6 +29,17 @@ Tabela de conteúdos
 
 ## 💾Instalação
 
+```bash
+# Clone este repositório
+$ git clone <https://github.com/tgmarinho/nlw1>
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd calculator
+
+# Instale as dependências
+$ npm install
+```
+
 ## 💻Desenvolvimento 
 
 ###
