@@ -1,4 +1,4 @@
-#Web Calculator
+# Web Calculator
 
 Tabela de conteúdos
 =================
@@ -19,13 +19,13 @@ Tabela de conteúdos
 
 <p>Em andamento...🚀</p>
 
-- [X]Somar
-- [ ]Multiplicar
-- [ ]Dividir
-- [ ]Subtrair
-- [ ]Botão de excluir
-- [ ]Radiciação
-- [ ]Exponenciação
+- [X] Somar
+- [ ] Multiplicar
+- [ ] Dividir
+- [ ] Subtrair
+- [ ] Botão de excluir
+- [ ] Radiciação
+- [ ] Exponenciação
 
 ## 💾Instalação
 
