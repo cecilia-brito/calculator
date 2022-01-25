@@ -31,7 +31,7 @@ Tabela de conteúdos
 
 ```bash
 # Clone este repositório
-$ git clone <https://github.com/tgmarinho/nlw1>
+$ git clone https://github.com/cecilia-brito/calculator.git
 
 # Acesse a pasta do projeto no terminal/cmd
 $ cd calculator
