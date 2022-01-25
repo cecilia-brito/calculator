@@ -24,19 +24,27 @@ html{
     justify-content: center;
 }
 
+
 .calculator-display{
     background-color: #a6a797;
     grid-area: display;
     border-radius: 0.8rem;
 }
 
-.calculator-display p{
-    margin-top: 2.6rem;
+.numbers-viewers{
     font-size: 4.4rem;
     text-align: right;
     color: white;
     font-family: 'PT Mono', monospace;
 }
+
+.viewer-operation{
+    height: 1.5rem;
+    color: rgba(58, 58, 58, 0.411);
+    font-size: 2.4rem;
+    margin: 1rem 0 0 1rem;
+}
+
 
 .btn_seven{
     background-color: gray;
