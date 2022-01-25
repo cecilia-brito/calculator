@@ -37,7 +37,7 @@ $ git clone https://github.com/cecilia-brito/calculator
 $ cd calculator
 
 # Instale as dependências
-$ npm install
+$ npm install reset-css
 ```
 
 ## 💻Desenvolvimento 
