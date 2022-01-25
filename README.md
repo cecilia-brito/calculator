@@ -19,6 +19,8 @@ Tabela de conteúdos
 
 <p>Em andamento...🚀</p>
 
+## 📝Features
+
 - [X] Somar
 - [ ] Multiplicar
 - [ ] Dividir
@@ -26,6 +28,12 @@ Tabela de conteúdos
 - [ ] Botão de excluir
 - [ ] Radiciação
 - [ ] Exponenciação
+- [ ] Operações com números decimas/ponto fluante
+
+#### Ideias
+
+- [ ] Cosseno
+- [ ] Seno
 
 ## 💾Instalação
 
