@@ -29,7 +29,7 @@ function addValuesInDisplay(buttonPressed){
 	if(buttonPressed != '+' && buttonPressed != '-' && buttonPressed != '/' && buttonPressed != 'X' && buttonPressed != undefined && buttonPressed != '=' && buttonPressed != 'undefined'){
 		DISPLAY.innerHTML += buttonPressed
 		
-	} else if(buttonPressed != undefined && command.buttonPressed != 'undefined'){
+	} else if(buttonPressed != undefined && buttonPressed != 'undefined'){
 		DISPLAY.innerHTML = ''
 		DISPLAY_PART_TO_OPERATION.innerHTML = buttonPressed
 	}
