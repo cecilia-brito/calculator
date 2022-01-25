@@ -1,4 +1,4 @@
-# Web Calculator <a href="https://github.com/cecilia-brito/calculator/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/cecilia-brito/calculator?color=blue"></a>
+# Web Calculator <a href="https://github.com/cecilia-brito/calculator/blob/master/LICENSE"><img alt="GitHub license is MIT" src="https://img.shields.io/github/license/cecilia-brito/calculator?color=blue"></a>
 
 Tabela de conteúdos
 =================
