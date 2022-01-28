@@ -5,6 +5,8 @@ Tabela de conteúdos
 <!--ts-->
    * [Descrição do projeto](#descrição-do-projeto)
    * [Status](#status)
+   * [Features](#features)
+   * [Instalação](#instalação)
    * [Desenvolvimento](#desenvolvimento)
    * [Resultado](#resultado)
    * [Tecnologias Utilizadas](#tecnologias-utilizadas)
@@ -22,18 +24,22 @@ Tabela de conteúdos
 ## 📝Features
 
 - [X] Somar
-- [ ] Multiplicar
-- [ ] Dividir
-- [ ] Subtrair
+- [X] Multiplicar
+- [X] Dividir
+- [X] Subtrair
 - [ ] Botão de excluir
 - [ ] Radiciação
 - [ ] Exponenciação
-- [ ] Operações com números decimas/ponto fluante
+- [ ] Operações com números decimais/ponto fluante
 
 #### Ideias
 
 - [ ] Cosseno
 - [ ] Seno
+- [ ] Melhorar aparência da calculadora
+  - [ ] Adicionar sombra interna nos botões
+  - [ ] Adicionar sombra interna no display da calculadora
+- [ ] Adicionar som ao clicar nos botões  
 
 ## 💾Instalação
 
@@ -54,7 +60,7 @@ $ npm install reset-css
 
 ## ☄Resultado
 
-<p>A página está hospedada no Github Pages, <a href='https://cecilia-brito.github.io/generator_border_radius/'>aqui</a></p>
+<p>A página está hospedada no Github Pages, <a href='#'>aqui</a></p>
 
 ## 💡Tecnologias Utilizadas
 <a href='https://developer.mozilla.org/pt-BR/docs/Web/HTML'><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt='logo do HTML em laranja' width ='60' height='60'/></a><a href='https://developer.mozilla.org/pt-BR/docs/Web/CSS'><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt='logo do CSS em azul'  width ='60' height='60'/></a><a href='https://developer.mozilla.org/pt-BR/docs/Web/JavaScript'><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt='logo do JavaScript em amarelo'  width ='60' height='60' /></a>
