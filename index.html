@@ -4,8 +4,8 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" type="text/css" href="/path/to/reset-css/reset.css">
-      <link rel="stylesheet" type="text/css" href="/style.css">
+      <link rel="stylesheet" href="/node_modules/reset-css/reset.css">
+      <link rel="stylesheet" type="text/css" href="/style.css"/>
       <title>Calculator</title>
   </head>
   <body>
@@ -13,7 +13,7 @@
             <div class="box-calculator" data-calculator>
               <div class="calculator-display">
 				<p data-display-operation class="viewer-operation"></p>
-                <p data-display-number class="numbers-viewers"></p>
+                <p data-display-number class="numbers-viewers">0</p>
               </div>
               <button class="btn_seven" data-value="7">7</button>
               <button class="btn_eight"  data-value="8">8</button>
@@ -33,7 +33,6 @@
               <button class="btn_add"  data-value="+">+</button>
             </div>
         </main>
-        <script src="/buttonsListenner.js" type="module"></script>
         <script src="main.js" type='module'></script>
       </body>
 </html>
