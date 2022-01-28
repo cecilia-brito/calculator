@@ -5,6 +5,8 @@ Tabela de conteúdos
 <!--ts-->
    * [Descrição do projeto](#descrição-do-projeto)
    * [Status](#status)
+   * [Features](#features)
+   * [Instalação](#instalação)
    * [Desenvolvimento](#desenvolvimento)
    * [Resultado](#resultado)
    * [Tecnologias Utilizadas](#tecnologias-utilizadas)
