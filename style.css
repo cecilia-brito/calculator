@@ -7,23 +7,23 @@ html{
 .box-calculator{
     background-color: black;
     display: grid;
-    width: 33rem;
+    width: 30rem;
     height: 46rem;
     margin: 2rem auto;
     border-radius: 0.8rem;
-    grid-template-columns: 8rem 8rem 8rem 8rem;
-    grid-template-rows: 9rem 8rem 8rem 8rem 8rem;
+    grid-template-columns: 7.5rem 7.5rem 7.5rem 7.5rem;
+    grid-template-rows: 9rem 6rem 6rem 6rem 6rem 6rem;
     grid-template-areas: "display display display display"
-                         "btn_7 btn_8 btn_9 btn_division"
-                         "btn_4 btn_5 btn_6 btn_multiplication"
-                         "btn_1 btn_2 btn_3 btn_subtration"
+                        "CE percent radiciacao btn_division"
+                         "btn_7 btn_8 btn_9 btn_multiplication"
+                         "btn_4 btn_5 btn_6 btn_subtration"
+                         "btn_1 btn_2 btn_3 btn_addition"
                          "btn_0 btn_dot btn_equal btn_addition"
     ;
     padding: 2rem 4rem 3rem 4rem;
     gap: 1.5rem;
     justify-content: center;
 }
-
 
 .calculator-display{
     background-color: #a6a797;
@@ -38,6 +38,8 @@ html{
     color: white;
     font-family: 'PT Mono', monospace;
     margin-right: 1rem;
+    width: 100%;
+    height: 100%;
 }
 
 .viewer-operation{
@@ -46,7 +48,6 @@ html{
     font-size: 2.4rem;
     margin: 1rem 0 0 1rem;
 }
-
 
 .btn-pattern{
     box-shadow: inset 0.5rem 0.5rem 2rem rgba(219, 219, 219, 0.5);

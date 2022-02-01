@@ -61,12 +61,20 @@ const operations = {
 
 function addValuesInDisplay(buttonPressed){
 	if(buttonPressed != '+' && buttonPressed != '-' && buttonPressed != '/' && buttonPressed != 'X' && buttonPressed != undefined && buttonPressed != '=' && buttonPressed != 'undefined'){
-		DISPLAY.innerHTML = ''
-		DISPLAY.innerHTML += buttonPressed
+		if(DISPLAY.innerHTML == 0){
+			DISPLAY.innerHTML = ''
+		
+			DISPLAY.innerHTML += buttonPressed
+			
+		} else{
+			if(DISPLAY.innerHTML.length < 13){
+				DISPLAY.innerHTML += buttonPressed
+			}
+		}
 		
 	} else if(buttonPressed != undefined && buttonPressed != 'undefined' && buttonPressed != '.'){
 		DISPLAY_PART_TO_OPERATION.innerHTML = buttonPressed
-		// DISPLAY.innerHTML = 0
+		DISPLAY.innerHTML = ''
 	}
 	console.log('dataDisplay addValuesInDisplay: ', dataDisplay);
 }
@@ -114,7 +122,7 @@ const factoryButtonListenner = () => {
 
 function getValuesOfDisplay(){
 	for(let i = 0; i < DISPLAY.textContent.length; i++){
-		dataDisplay.number = parseInt(DISPLAY.innerHTML);
+		dataDisplay.number = parseFloat(DISPLAY.innerHTML);
 		// DISPLAY.innerHTML = 0;
 	}
 	console.log('datedisplay ', dataDisplay.number)
@@ -122,7 +130,7 @@ function getValuesOfDisplay(){
 
 function addResultInDisplay(buttonPressed){
 	if(buttonPressed.buttonPressed === '='){
-		DISPLAY.innerHTML = parseInt(dataDisplay.result) 
+		DISPLAY.innerHTML = parseFloat(dataDisplay.result) 
 		dataDisplay.result = '';
 	}
 }
