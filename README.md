@@ -37,8 +37,8 @@ Tabela de conteúdos
 - [ ] Cosseno
 - [ ] Seno
 - [ ] Melhorar aparência da calculadora
-  - [ ] Adicionar sombra interna nos botões
-  - [ ] Adicionar sombra interna no display da calculadora
+  - [X] Adicionar sombra interna nos botões
+  - [X] Adicionar sombra interna no display da calculadora
 - [ ] Adicionar som ao clicar nos botões  
 
 ## 💾Instalação
