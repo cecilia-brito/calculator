@@ -137,12 +137,11 @@ const operations = {
 
 function addValuesInDisplay(buttonPressed){
 	if(buttonPressed != '+' && buttonPressed != '-' && buttonPressed != '/' && buttonPressed != 'X' && buttonPressed != undefined && buttonPressed != '=' && buttonPressed != 'undefined' && buttonPressed != '√' && buttonPressed != '%'){
-		if(DISPLAY.innerHTML == 0){
+		if(DISPLAY.innerHTML == 0 && DISPLAY.innerHTML.length <= 1 && buttonPressed != '.'){
 			DISPLAY.innerHTML = ''
 		
 			DISPLAY.innerHTML += buttonPressed
-			
-		} else if(buttonPressed == 'CE'){
+			}else if(buttonPressed == 'CE'){
 			let arrayDisplay = DISPLAY.innerHTML
 			//transforma uma string em uma array de caracteres
 			arrayDisplay = [...arrayDisplay]
