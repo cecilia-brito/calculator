@@ -4,12 +4,21 @@ html{
     font-size: 62.5%;
 }
 
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .box-calculator{
     background-color: black;
     display: grid;
-    width: 30rem;
-    height: 46rem;
-    margin: 2rem auto;
+    margin: 2.5rem 0;
+    max-width: 30rem;
+    max-height: 46rem;
+    width: 100%;
+    height: 100%;
+    /* margin: 2rem auto; */
     border-radius: 0.8rem;
     grid-template-columns: 7.5rem 7.5rem 7.5rem 7.5rem;
     grid-template-rows: 9rem 6rem 6rem 6rem 6rem 6rem;

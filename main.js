@@ -3,6 +3,7 @@ var adicionou = false;
 var multiplicou = false;
 var dividiu = false;
 var subtraiu = false;
+var rooting = false;
 
 const DISPLAY = document.querySelector('[data-display-number]')
 const DISPLAY_PART_TO_OPERATION = document.querySelector('[data-display-operation]')
@@ -56,11 +57,31 @@ const operations = {
 				subtraiu = false
 				addResultInDisplay(command)
 			} 
+		},
+		calculateRooting: (command) =>{
+			getValuesOfDisplay();
+			if(command.buttonPressed == '√'){
+				dataDisplay.result = 0 ;
+				dataDisplay.result = dataDisplay.number
+				dataDisplay.result = dataDisplay.result ** (1/2)
+				dataDisplay.number = dataDisplay.result
+				addResultInDisplay(command)
+			}
+		}, 
+		calculatePercent: (command) =>{
+			getValuesOfDisplay();
+			if(command.buttonPressed == '%'){
+				dataDisplay.result = 0;
+				dataDisplay.result = dataDisplay.number
+				dataDisplay.result = dataDisplay.result / 100
+				dataDisplay.number = dataDisplay.result
+				addResultInDisplay(command)
+			}
 		}
 }
 
 function addValuesInDisplay(buttonPressed){
-	if(buttonPressed != '+' && buttonPressed != '-' && buttonPressed != '/' && buttonPressed != 'X' && buttonPressed != undefined && buttonPressed != '=' && buttonPressed != 'undefined'){
+	if(buttonPressed != '+' && buttonPressed != '-' && buttonPressed != '/' && buttonPressed != 'X' && buttonPressed != undefined && buttonPressed != '=' && buttonPressed != 'undefined' && buttonPressed != '√' && buttonPressed != '%'){
 		if(DISPLAY.innerHTML == 0){
 			DISPLAY.innerHTML = ''
 		
@@ -68,8 +89,10 @@ function addValuesInDisplay(buttonPressed){
 			
 		} else if(buttonPressed == 'CE'){
 			let arrayDisplay = DISPLAY.innerHTML
+			//transforma uma string em uma array de caracteres
 			arrayDisplay = [...arrayDisplay]
 			console.log(arrayDisplay)
+			//retira o último elemento de uma array
 			arrayDisplay.pop()
 			DISPLAY.innerHTML = arrayDisplay
 		} else{
@@ -135,9 +158,14 @@ function getValuesOfDisplay(){
 }
 
 function addResultInDisplay(buttonPressed){
-	if(buttonPressed.buttonPressed === '='){
-		DISPLAY.innerHTML = parseFloat(dataDisplay.result) 
-		dataDisplay.result = '';
+	if(buttonPressed.buttonPressed === '=' || buttonPressed.buttonPressed === '√' ||  buttonPressed.buttonPressed ==='%'){
+		let ArrayResult = [...dataDisplay.result + '']
+		if(ArrayResult.length < 12){
+			DISPLAY.innerHTML = parseFloat(dataDisplay.result) 
+			dataDisplay.result = '';
+		} else{
+			DISPLAY.innerHTML = parseFloat(dataDisplay.result).toFixed(6)
+		}
 	}
 }
 
@@ -160,3 +188,5 @@ buttonListenner.subscribe(operations.calculateAddition);
 buttonListenner.subscribe(operations.calculateMultiplication);
 buttonListenner.subscribe(operations.calculateDivision);
 buttonListenner.subscribe(operations.calculteSubtration);
+buttonListenner.subscribe(operations.calculateRooting);
+buttonListenner.subscribe(operations.calculatePercent);
