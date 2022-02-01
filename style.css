@@ -40,13 +40,15 @@ html{
     margin-right: 1rem;
     width: 100%;
     height: 100%;
+    font-weight: 400;
+    /* font-size: 2.6rem; */
 }
 
 .viewer-operation{
-    height: 1.5rem;
-    color: rgba(58, 58, 58, 0.411);
-    font-size: 2.4rem;
-    margin: 1rem 0 0 1rem;
+    height: 2rem;
+    color: rgba(58, 58, 58, 0.7);
+    font-size: 3rem;
+    margin: 1rem 0 0  1rem;
 }
 
 .btn-pattern{
@@ -54,6 +56,8 @@ html{
     background-color: gray;
     color: white;
     border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 2.6rem;
 }
 
 .btn_seven{

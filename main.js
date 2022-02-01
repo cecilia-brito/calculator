@@ -66,8 +66,14 @@ function addValuesInDisplay(buttonPressed){
 		
 			DISPLAY.innerHTML += buttonPressed
 			
+		} else if(buttonPressed == 'CE'){
+			let arrayDisplay = DISPLAY.innerHTML
+			arrayDisplay = [...arrayDisplay]
+			console.log(arrayDisplay)
+			arrayDisplay.pop()
+			DISPLAY.innerHTML = arrayDisplay
 		} else{
-			if(DISPLAY.innerHTML.length < 13){
+			if(DISPLAY.innerHTML.length < 12){
 				DISPLAY.innerHTML += buttonPressed
 			}
 		}
