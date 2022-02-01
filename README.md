@@ -28,8 +28,8 @@ Tabela de conteúdos
 - [X] Dividir
 - [X] Subtrair
 - [X] Botão de excluir
-- [ ] Radiciação
-- [ ] Porcentagem
+- [X] Raiz quadrada
+- [X] Porcentagem
 - [X] Operações com números decimais/ponto fluante
 
 #### Ideias
@@ -41,6 +41,7 @@ Tabela de conteúdos
   - [X] Adicionar sombra interna no display da calculadora
 - [ ] Adicionar som ao clicar nos botões  
 - [ ] Exponenciação
+- [ ] Radiciação com qualquer radicando e indíce
 
 ## 💾Instalação
 
