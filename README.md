@@ -64,6 +64,9 @@ $ npm install reset-css
 
 <p>A página está hospedada no Github Pages, <a href='#'>aqui</a></p>
 
+![Calculator-Google-Chrome-2022-02-01-21-01-52](https://user-images.githubusercontent.com/84740942/152072336-0dffa766-98bd-4eec-83de-e41009f684e7.gif)
+
+
 ## 💡Tecnologias Utilizadas
 <a href='https://developer.mozilla.org/pt-BR/docs/Web/HTML'><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt='logo do HTML em laranja' width ='60' height='60'/></a><a href='https://developer.mozilla.org/pt-BR/docs/Web/CSS'><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt='logo do CSS em azul'  width ='60' height='60'/></a><a href='https://developer.mozilla.org/pt-BR/docs/Web/JavaScript'><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt='logo do JavaScript em amarelo'  width ='60' height='60' /></a>
 
