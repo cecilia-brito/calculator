@@ -137,7 +137,7 @@ const operations = {
 
 function addValuesInDisplay(buttonPressed){
 	if(buttonPressed != '+' && buttonPressed != '-' && buttonPressed != '/' && buttonPressed != 'X' && buttonPressed != undefined && buttonPressed != '=' && buttonPressed != 'undefined' && buttonPressed != '√' && buttonPressed != '%'){
-		if(DISPLAY.innerHTML == 0 && DISPLAY.innerHTML.length <= 1 && buttonPressed != '.'){
+		if(DISPLAY.innerHTML == 0 && DISPLAY.innerHTML.length <= 1 && buttonPressed != '.'  && buttonPressed!= 'CE'){
 			DISPLAY.innerHTML = ''
 		
 			DISPLAY.innerHTML += buttonPressed
@@ -158,7 +158,7 @@ function addValuesInDisplay(buttonPressed){
 			}
 		}
 		
-	} else if(buttonPressed != undefined && buttonPressed != 'undefined' && buttonPressed != '.'){
+	} else if(buttonPressed != undefined && buttonPressed != 'undefined' && buttonPressed != '.'  && buttonPressed!= 'CE'){
 		DISPLAY_PART_TO_OPERATION.innerHTML = buttonPressed
 		DISPLAY.innerHTML = ''
 	}
