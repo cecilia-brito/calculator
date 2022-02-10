@@ -1,8 +1,8 @@
 // TO-DO refatorar codigo: melhorar nomes de variáveis, constantes e funções,
-var adicionou = false;
-var multiplicou = false;
-var dividiu = false;
-var subtraiu = false;
+var added = false;
+var multiplied = false;
+var divided = false;
+var subtracted = false;
 var rooting = false;
 
 const DISPLAY = document.querySelector('[data-display-number]')
@@ -21,17 +21,17 @@ const operations = {
 		if(command.buttonPressed == '+'){
 			dataDisplay.result = 0;
 			dataDisplay.result += dataDisplay.number
-			adicionou = true;
+			added = true;
 			BTN_ADD.disabled = true;
 			BTN_DIV.disabled = true;
 			BTN_MULTI.disabled = true;
 			BTN_PERCENT.disabled = true;
 			BTN_ROOTING.disabled = true;
 			BTN_SUBTRATION.disabled = true
-		} else if((command.buttonPressed === '=') && (adicionou === true)){
+		} else if((command.buttonPressed === '=') && (added === true)){
 			dataDisplay.number = dataDisplay.result + dataDisplay.number
 			dataDisplay.result = dataDisplay.number
-			adicionou = false
+			added = false
 			addResultInDisplay(command)
 			BTN_ADD.disabled = false;
 			BTN_DIV.disabled = false;
@@ -45,17 +45,17 @@ const operations = {
 			if(command.buttonPressed == 'X'){
 				dataDisplay.result = 1;
 				dataDisplay.result *= dataDisplay.number
-				multiplicou = true;
+				multiplied = true;
 				BTN_ADD.disabled = true;
 				BTN_DIV.disabled = true;
 				BTN_MULTI.disabled = true;
 				BTN_PERCENT.disabled = true;
 				BTN_ROOTING.disabled = true;
 				BTN_SUBTRATION.disabled = true
-			} else if(command.buttonPressed == '='  && (multiplicou == true)){
+			} else if(command.buttonPressed == '='  && (multiplied == true)){
 				dataDisplay.number = dataDisplay.result * dataDisplay.number
 				dataDisplay.result = dataDisplay.number
-				multiplicou = false;
+				multiplied = false;
 				addResultInDisplay(command);
 				BTN_ADD.disabled = false;
 				BTN_DIV.disabled = false;
@@ -69,17 +69,17 @@ const operations = {
 			if(command.buttonPressed == '/'){
 				dataDisplay.result = 1;
 				dataDisplay.result = dataDisplay.number
-				dividiu = true
+				divided = true
 				BTN_ADD.disabled = true;
 				BTN_DIV.disabled = true;
 				BTN_MULTI.disabled = true;
 				BTN_PERCENT.disabled = true;
 				BTN_ROOTING.disabled = true;
 				BTN_SUBTRATION.disabled = true
-			} else if(command.buttonPressed == '=' && (dividiu == true)){
+			} else if(command.buttonPressed == '=' && (divided == true)){
 				dataDisplay.number = dataDisplay.result / dataDisplay.number
 				dataDisplay.result = dataDisplay.number
-				dividiu = false
+				divided = false
 				BTN_ADD.disabled = false;
 				BTN_DIV.disabled = false;
 				BTN_MULTI.disabled = false;
@@ -93,17 +93,17 @@ const operations = {
 			if(command.buttonPressed == '-'){
 				dataDisplay.result = 0 ;
 				dataDisplay.result = dataDisplay.number
-				subtraiu = true
+				subtracted = true
 				BTN_ADD.disabled = true;
 				BTN_DIV.disabled = true;
 				BTN_MULTI.disabled = true;
 				BTN_PERCENT.disabled = true;
 				BTN_ROOTING.disabled = true;
 				BTN_SUBTRATION.disabled = true
-			} else if((command.buttonPressed == '=') && (subtraiu == true)){
+			} else if((command.buttonPressed == '=') && (subtracted == true)){
 				dataDisplay.number = dataDisplay.result - dataDisplay.number
 				dataDisplay.result = dataDisplay.number
-				subtraiu = false
+				subtracted = false
 				BTN_ADD.disabled = false;
 				BTN_DIV.disabled = false;
 				BTN_MULTI.disabled = false;
@@ -142,16 +142,16 @@ function addValuesInDisplay(buttonPressed){
 		
 			DISPLAY.innerHTML += buttonPressed
 		}else if(buttonPressed == 'CE' && DISPLAY.innerHTML != ''){
-			let arrayDisplay = DISPLAY.innerHTML
+			let arrayDisplayContent = DISPLAY.innerHTML
 			//transforma uma string em uma array de caracteres
-			arrayDisplay = [...arrayDisplay]
+			arrayDisplayContent = [...arrayDisplayContent]
 			// console.log(arrayDisplay)
 			//retira o último elemento de uma array
-			arrayDisplay.pop()
+			arrayDisplayContent.pop()
 			// console.log(arrayDisplay.join(''))
 			//junta os elementos de uma array e transforma em string, separando os elementos 
 			//com o separador definido entre parênteses
-			DISPLAY.innerHTML = arrayDisplay.join('')
+			DISPLAY.innerHTML = arrayDisplayContent.join('')
 		} else{
 			if(DISPLAY.innerHTML.length < 12 && buttonPressed !== 'CE'){
 				DISPLAY.innerHTML += buttonPressed
@@ -162,7 +162,7 @@ function addValuesInDisplay(buttonPressed){
 		DISPLAY_PART_TO_OPERATION.innerHTML = buttonPressed
 		DISPLAY.innerHTML = ''
 	}
-	console.log('dataDisplay addValuesInDisplay: ', dataDisplay);
+
 }
 
 const factoryButtonListenner = () => {
@@ -188,8 +188,6 @@ const factoryButtonListenner = () => {
 
 	function createButtonListenner(event){
 		const buttonPressed = event.target.dataset.value + '';
-		console.log(buttonPressed);
-
 		const command = {
 			buttonPressed: buttonPressed
 		}
@@ -211,7 +209,6 @@ function getValuesOfDisplay(){
 		dataDisplay.number = parseFloat(DISPLAY.innerHTML);
 		// DISPLAY.innerHTML = 0;
 	}
-	console.log('datedisplay ', dataDisplay.number)
 }
 
 function addResultInDisplay(buttonPressed){
