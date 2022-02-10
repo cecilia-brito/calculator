@@ -30,7 +30,7 @@ Tabela de conteúdos
 - [X] Botão de excluir
 - [X] Raiz quadrada
 - [X] Porcentagem
-- [X] Operações com números decimais/ponto fluante
+- [X] Operações com números decimais/ponto flutuante
 
 #### Ideias
 
