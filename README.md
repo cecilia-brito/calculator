@@ -53,7 +53,7 @@ $ git clone https://github.com/cecilia-brito/calculator
 $ cd calculator
 
 # Instale as dependências
-$ npm install reset-css
+$ yarn add reset.css
 ```
 
 ## 💻Desenvolvimento 
