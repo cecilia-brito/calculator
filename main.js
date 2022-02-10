@@ -137,11 +137,11 @@ const operations = {
 
 function addValuesInDisplay(buttonPressed){
 	if(buttonPressed != '+' && buttonPressed != '-' && buttonPressed != '/' && buttonPressed != 'X' && buttonPressed != undefined && buttonPressed != '=' && buttonPressed != 'undefined' && buttonPressed != '√' && buttonPressed != '%'){
-		if(DISPLAY.innerHTML == 0 && DISPLAY.innerHTML.length <= 1 && buttonPressed != '.'){
+		if(DISPLAY.innerHTML == 0 && DISPLAY.innerHTML.length <= 1 && buttonPressed != '.' && DISPLAY.innerHTML != ''){
 			DISPLAY.innerHTML = ''
 		
 			DISPLAY.innerHTML += buttonPressed
-			}else if(buttonPressed == 'CE'){
+		}else if(buttonPressed == 'CE' && DISPLAY.innerHTML != ''){
 			let arrayDisplay = DISPLAY.innerHTML
 			//transforma uma string em uma array de caracteres
 			arrayDisplay = [...arrayDisplay]
@@ -153,7 +153,7 @@ function addValuesInDisplay(buttonPressed){
 			//com o separador definido entre parênteses
 			DISPLAY.innerHTML = arrayDisplay.join('')
 		} else{
-			if(DISPLAY.innerHTML.length < 12){
+			if(DISPLAY.innerHTML.length < 12 && buttonPressed !== 'CE'){
 				DISPLAY.innerHTML += buttonPressed
 			}
 		}
