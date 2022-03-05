@@ -56,7 +56,12 @@ $ cd calculator
 $ yarn add reset.css
 ```
 
-## 💻Desenvolvimento 
+## 📖Aprendizados 
+
+<ul>
+  <li>Noção de design patterns: factory e observer</li>
+  <li>Uso de objetos</li>
+</ul>
 
 ###
 
