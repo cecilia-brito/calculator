@@ -7,7 +7,7 @@ Tabela de conteúdos
    * [Status](#status)
    * [Features](#features)
    * [Instalação](#instalação)
-   * [Desenvolvimento](#desenvolvimento)
+   * [Aprendizados](#aprendizados)
    * [Resultado](#resultado)
    * [Tecnologias Utilizadas](#tecnologias-utilizadas)
    * [Author](#author)
